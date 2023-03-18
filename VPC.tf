@@ -79,6 +79,6 @@ resource "aws_vpc_endpoint" "jupyter-vpce-s3" {
   tags                  = {
     "Name" = "jupyter-vpce-s3"
   }
-  vpc_endpoint_type     = "jupyter Gateway"
+  vpc_endpoint_type     = "Gateway"
   vpc_id                = aws_vpc.jupyter-vpc.id
 }
